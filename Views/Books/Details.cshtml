@@ -2,14 +2,26 @@
 @{
     ViewBag.Title = "Book Details";
 }
-<h2>Book Details</h2>
 
-<div>
-    <p><strong>Title:</strong> @Model.Title</p>
-    <p><strong>Author:</strong> @Model.Author</p>
-    <p><strong>Year:</strong> @Model.Year</p>
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-info text-white">
+            <h4>📖 Book Details</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">📘 Title:</dt>
+                <dd class="col-sm-9">@Model.Title</dd>
+
+                <dt class="col-sm-3">✍️ Author:</dt>
+                <dd class="col-sm-9">@Model.Author</dd>
+
+                <dt class="col-sm-3">📅 Year:</dt>
+                <dd class="col-sm-9">@Model.Year</dd>
+            </dl>
+            <div class="text-end">
+                @Html.ActionLink("⬅️ Back to List", "Index", null, new { @class = "btn btn-outline-secondary" })
+            </div>
+        </div>
+    </div>
 </div>
-
-<p>
-    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
-</p>

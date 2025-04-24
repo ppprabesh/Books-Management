@@ -278,3 +278,4 @@ C:\Users\asus\Desktop\BookManagerApp\obj\Debug\net8.0\BookManagerApp.pdb
 C:\Users\asus\Desktop\BookManagerApp\obj\Debug\net8.0\BookManagerApp.genruntimeconfig.cache
 C:\Users\asus\Desktop\BookManagerApp\obj\Debug\net8.0\ref\BookManagerApp.dll
 C:\Users\asus\Desktop\BookManagerApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\asus\Desktop\BookManagerApp\obj\Debug\net8.0\BookManagerApp.sourcelink.json
