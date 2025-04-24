@@ -1,0 +1,27 @@
+﻿@model BookManagerApp.Models.Book
+@{
+    ViewBag.Title = "Edit Book";
+}
+<h2>Edit Book</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Title)
+            @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Author)
+            @Html.TextBoxFor(m => m.Author, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Year)
+            @Html.TextBoxFor(m => m.Year, new { @class = "form-control" })
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </div>
+}

@@ -1,0 +1,15 @@
+﻿@model BookManagerApp.Models.Book
+@{
+    ViewBag.Title = "Book Details";
+}
+<h2>Book Details</h2>
+
+<div>
+    <p><strong>Title:</strong> @Model.Title</p>
+    <p><strong>Author:</strong> @Model.Author</p>
+    <p><strong>Year:</strong> @Model.Year</p>
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+</p>
